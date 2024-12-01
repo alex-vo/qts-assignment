@@ -1,13 +1,13 @@
 import axios from "axios";
 
-type BinanceExchangeInfo = {
+type BinanceExchangeInfoData = {
   symbols: {
     symbol: string;
   }[];
 };
 
 const {data: {symbols}} = await axios
-  .get<BinanceExchangeInfo>("https://api.binance.com/api/v3/exchangeInfo?showPermissionSets=false&permissions=SPOT");
+  .get<BinanceExchangeInfoData>("https://api.binance.com/api/v3/exchangeInfo?showPermissionSets=false&permissions=SPOT");
 
 const nowMinus20Min = new Date().getTime() - 20 * 60 * 1000;
 const data = await Promise.all(
