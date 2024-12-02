@@ -7,6 +7,7 @@ bun install
 ```
 
 Запустить решение задачи 2 часть 1.1:
+![img.png](img/img_task2_1_1.png)
 ```bash
 bun run src/task2_1.solution1.ts
 ```
