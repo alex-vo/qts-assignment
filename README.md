@@ -1,4 +1,4 @@
-# qts-test
+# qts-assignment
 
 To install dependencies:
 

@@ -1,5 +1,5 @@
 {
-  "name": "qts-test",
+  "name": "qts-assignment",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
