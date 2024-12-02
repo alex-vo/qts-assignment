@@ -11,6 +11,7 @@ bun install
 ```bash
 bun run src/task2_1.solution1.ts
 ```
+---
 Запустить решение задачи 2 часть 1.2:
 ```bash
 bun run src/task2_1.solution2.ts
