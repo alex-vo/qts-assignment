@@ -59,6 +59,4 @@ const subscribeForTicks = (ticker: string, tickQuantityUSDTThreshold: number) =>
   }, PING_INTERVAL);
 };
 
-subscribeForTicks("btcusdt", 20000);
-subscribeForTicks("ethusdt", 10000);
-subscribeForTicks("solusdt", 5000);
+export {subscribeForTicks};

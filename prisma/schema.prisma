@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model historical_data {
+  id        String   @id @db.Uuid
+  ticker    String
+  exchange  exchange
+  open_time BigInt
+  open      Decimal  @db.Decimal
+  high      Decimal  @db.Decimal
+  low       Decimal  @db.Decimal
+  close     Decimal  @db.Decimal
+  volume    Decimal  @db.Decimal
+}
+
+enum exchange {
+  Binance
+}
